@@ -1,0 +1,226 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <TrimmerRootAssembly Include="MonoGame.Framework" />
+    <TrimmerRootAssembly Include="mscorlib" />
+  </ItemGroup>
+  <PropertyGroup>
+    <LangVersion>11</LangVersion>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <NoWarn />
+    <WarningsAsErrors />
+    <DefineConstants>$(DefineConstants);X64</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <NoWarn />
+    <WarningsAsErrors />
+    <DefineConstants>$(DefineConstants);X64</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <NoWarn />
+    <WarningsAsErrors />
+    <DefineConstants>$(DefineConstants);X86</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <NoWarn />
+    <WarningsAsErrors />
+    <DefineConstants>$(DefineConstants);X64;IMGUI</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <NoWarn />
+    <WarningsAsErrors />
+    <DefineConstants>$(DefineConstants);IMGUI;X64</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <NoWarn />
+    <WarningsAsErrors />
+    <DefineConstants>$(DefineConstants);X86;IMGUI</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="EngineOld\**" />
+    <Compile Remove="Engine\Hierarchy\**" />
+    <Compile Remove="FMOD Project\**" />
+    <Compile Remove="FMOD proj\**" />
+    <Compile Remove="FNAFFangame\**" />
+    <Compile Remove="MonoGame.ImGuiNet\**" />
+    <EmbeddedResource Remove="EngineOld\**" />
+    <EmbeddedResource Remove="Engine\Hierarchy\**" />
+    <EmbeddedResource Remove="FMOD Project\**" />
+    <EmbeddedResource Remove="FMOD proj\**" />
+    <EmbeddedResource Remove="FNAFFangame\**" />
+    <EmbeddedResource Remove="MonoGame.ImGuiNet\**" />
+    <None Remove="EngineOld\**" />
+    <None Remove="Engine\Hierarchy\**" />
+    <None Remove="FMOD Project\**" />
+    <None Remove="FMOD proj\**" />
+    <None Remove="FNAFFangame\**" />
+    <None Remove="MonoGame.ImGuiNet\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Engine\Graphics\SpriteAnimation.cs" />
+    <Compile Remove="Engine\Graphics\SpriteSheet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FontStashSharp.MonoGame" Version="1.3.10" />
+    <PackageReference Include="Hexa.NET.ImGui" Version="2.2.7" />
+    <PackageReference Include="Hexa.NET.ImPlot" Version="2.2.7" />
+    <PackageReference Include="MonoGame.Aseprite" Version="6.1.0" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.3" />
+    <PackageReference Include="Noesis.GUI" Version="3.2.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Content\aseprite\amongUs.ase">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\aseprite\office.aseprite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\FMOD\Desktop\Master.bank">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\FMOD\Desktop\Master.strings.bank">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\FMOD\Desktop\Music and Ambience.bank">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\FMOD\Desktop\Voiceover.bank">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\bfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\consola.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\consola_bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\Inter-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\Inter-BoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\Inter-Italic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\Inter-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\Inter-Thin.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\Inter-ThinItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\JetBrainsMono-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\JetBrainsMono-BoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\JetBrainsMono-Italic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\JetBrainsMono-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\JetBrainsMono-LightItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\JetBrainsMono-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\fonts\lucide.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\resource_names.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="fmod.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodL.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodL_32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodL_64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodstudio.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodstudioL.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodstudioL_32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodstudioL_64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodstudioL_vc.lib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodstudio_32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmodstudio_64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmod_32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmod_64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fmod_vc.lib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="HexaGen.Runtime.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="System.Numerics.Vectors.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+</Project>

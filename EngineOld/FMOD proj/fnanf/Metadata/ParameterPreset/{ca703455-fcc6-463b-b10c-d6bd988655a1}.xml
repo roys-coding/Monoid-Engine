@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ca703455-fcc6-463b-b10c-d6bd988655a1}">
+		<property name="name">
+			<value>kitchen_camera_on</value>
+		</property>
+		<relationship name="folder">
+			<destination>{471d5e17-e545-49c2-ae42-2d78a76cd66a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{346add36-d5ce-4bf5-a676-97bac1e969fe}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{346add36-d5ce-4bf5-a676-97bac1e969fe}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

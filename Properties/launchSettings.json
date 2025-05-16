@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MyMonoGameApp": {
+      "commandName": "Project",
+      "commandLineArgs": "-fmodliveupdate"
+    }
+  }
+}

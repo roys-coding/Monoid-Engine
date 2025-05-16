@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{efa0ef7e-8dc5-43a9-9e91-0a59e2993f59}">
+		<property name="name">
+			<value>suspense</value>
+		</property>
+		<relationship name="folder">
+			<destination>{471d5e17-e545-49c2-ae42-2d78a76cd66a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{40d41287-01e8-4b21-ac72-5d70b71a116f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{40d41287-01e8-4b21-ac72-5d70b71a116f}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>50</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>20</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerVCA" id="{e31a8777-2ab9-4047-ae73-28bee5e871a0}">
+		<property name="name">
+			<value>Voiceover</value>
+		</property>
+		<relationship name="automators">
+			<destination>{45972f85-71b3-449d-ab8e-6473e8159aed}</destination>
+		</relationship>
+		<relationship name="masters">
+			<destination>{be7916dd-ebd0-4853-beb8-db930764cc61}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{7e380cd6-c379-4a04-91cd-96bafc22f5ec}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{45972f85-71b3-449d-ab8e-6473e8159aed}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{d6578032-e60b-4641-8206-b57867528fca}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{d6578032-e60b-4641-8206-b57867528fca}">
+		<relationship name="parameter">
+			<destination>{99d79fd3-06f8-4e93-83ab-f7f338e5c2d3}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{656bdbc0-44e7-4107-9f45-68164e4df896}</destination>
+			<destination>{91ad7a10-11a6-4f13-994a-3a5709ef58a9}</destination>
+			<destination>{290f22db-b8bf-44e7-9f18-7f231d3bf9b5}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{656bdbc0-44e7-4107-9f45-68164e4df896}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>0.178175613</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{91ad7a10-11a6-4f13-994a-3a5709ef58a9}">
+		<property name="position">
+			<value>0.99997916666666664</value>
+		</property>
+		<property name="value">
+			<value>-7</value>
+		</property>
+		<property name="curveShape">
+			<value>0.487212449</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{290f22db-b8bf-44e7-9f18-7f231d3bf9b5}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+	</object>
+</objects>

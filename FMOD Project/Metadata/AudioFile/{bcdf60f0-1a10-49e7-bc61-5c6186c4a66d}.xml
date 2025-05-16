@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bcdf60f0-1a10-49e7-bc61-5c6186c4a66d}">
+		<property name="assetPath">
+			<value>deagle_shoot.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.51181405895691612</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9a094a0e-25ef-42f3-8489-09e8d05e5dba}</destination>
+		</relationship>
+	</object>
+</objects>

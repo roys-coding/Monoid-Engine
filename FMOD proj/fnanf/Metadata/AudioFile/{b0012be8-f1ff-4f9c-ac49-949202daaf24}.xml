@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b0012be8-f1ff-4f9c-ac49-949202daaf24}">
+		<property name="assetPath">
+			<value>SFX/camera/cameras_down.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.8063945578231293</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a777c34c-9dc1-4a08-90b6-4d57e7ec15d0}</destination>
+		</relationship>
+	</object>
+</objects>

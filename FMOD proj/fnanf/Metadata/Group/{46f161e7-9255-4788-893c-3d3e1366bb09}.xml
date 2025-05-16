@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{46f161e7-9255-4788-893c-3d3e1366bb09}">
+		<property name="name">
+			<value>Stingers and Jumpscares</value>
+		</property>
+		<relationship name="masters">
+			<destination>{a2a76cca-cd53-4b88-8814-ec7a620f2371}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{62ef90d2-0f63-4b3a-a90e-09a10dd77ec8}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{42c4c271-d7d0-4236-b262-41828cadf9cb}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{eeebbd48-fe8a-42ba-af5f-8ecd5fba229e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{62ef90d2-0f63-4b3a-a90e-09a10dd77ec8}">
+		<relationship name="effects">
+			<destination>{5c00bf38-1220-43c6-8854-0555a7747c50}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{42c4c271-d7d0-4236-b262-41828cadf9cb}" />
+	<object class="MixerBusFader" id="{5c00bf38-1220-43c6-8854-0555a7747c50}" />
+</objects>

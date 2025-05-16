@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d7341890-ce89-424d-89b1-7c0d3e565171}">
+		<property name="assetPath">
+			<value>run_fast.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.5738321995464855</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a777c34c-9dc1-4a08-90b6-4d57e7ec15d0}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5f4bb918-12d0-4edc-8c29-3d7f12e3e55d}">
+		<property name="assetPath">
+			<value>voiceover/call_night_05.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>37.407346938775511</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a777c34c-9dc1-4a08-90b6-4d57e7ec15d0}</destination>
+		</relationship>
+	</object>
+</objects>

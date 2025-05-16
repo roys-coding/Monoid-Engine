@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c71b9d78-5a18-4457-b2d9-8303b3c61e41}">
+		<property name="assetPath">
+			<value>concrete_break.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.6005895691609977</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9a094a0e-25ef-42f3-8489-09e8d05e5dba}</destination>
+		</relationship>
+	</object>
+</objects>

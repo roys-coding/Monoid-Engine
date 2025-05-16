@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c66a144b-e460-48cd-97ae-dba52ad80cfa}">
+		<property name="assetPath">
+			<value>SFX/camera/camera_active_02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>16.629342403628119</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a777c34c-9dc1-4a08-90b6-4d57e7ec15d0}</destination>
+		</relationship>
+	</object>
+</objects>

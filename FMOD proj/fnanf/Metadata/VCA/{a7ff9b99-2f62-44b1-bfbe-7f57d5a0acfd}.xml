@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerVCA" id="{a7ff9b99-2f62-44b1-bfbe-7f57d5a0acfd}">
+		<property name="name">
+			<value>Cameras</value>
+		</property>
+		<relationship name="automators">
+			<destination>{881ab47a-6fd1-4fd3-b88c-dd5552009d89}</destination>
+		</relationship>
+		<relationship name="masters">
+			<destination>{be7916dd-ebd0-4853-beb8-db930764cc61}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{7e380cd6-c379-4a04-91cd-96bafc22f5ec}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{881ab47a-6fd1-4fd3-b88c-dd5552009d89}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{7e53c60f-24b0-40bf-a86d-ef7df1c791aa}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{7e53c60f-24b0-40bf-a86d-ef7df1c791aa}">
+		<relationship name="parameter">
+			<destination>{99d79fd3-06f8-4e93-83ab-f7f338e5c2d3}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{238755de-84bc-46c7-a7ac-89c0082497c1}</destination>
+			<destination>{60e97253-d0a3-4338-adc6-ac530fed80c5}</destination>
+			<destination>{94c10eb6-cd25-4ef2-a42f-e7013f3aa07b}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{238755de-84bc-46c7-a7ac-89c0082497c1}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{60e97253-d0a3-4338-adc6-ac530fed80c5}">
+		<property name="position">
+			<value>0.99997916666666664</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{94c10eb6-cd25-4ef2-a42f-e7013f3aa07b}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+	</object>
+</objects>
